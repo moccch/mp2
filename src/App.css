@@ -1,0 +1,90 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Navigation Bar */
+.nav-bar {
+  background-color: #2c3e50;
+  padding: 15px 30px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #34495e;
+}
+
+/* Home Page */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 60px);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.home-page h1 {
+  font-size: 3em;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home-page p {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 40px;
+  font-size: 1.2em;
+  color: white;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 10px 15px;
+    gap: 10px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .home-page h1 {
+    font-size: 2em;
+  }
+
+  .home-page p {
+    font-size: 1.2em;
+  }
+}
