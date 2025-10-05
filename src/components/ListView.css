@@ -13,11 +13,11 @@
 
 /* Controls Section */
 .controls {
-  background: #f8f9fa;
+  background: #fff;
   padding: 20px;
-  border-radius: 8px;
+  border-radius: 12px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
 }
 
 .search-container {
@@ -25,13 +25,15 @@
 }
 
 .search-input {
+  display: block;
   width: 100%;
-  padding: 12px 20px;
+  padding: 12px 16px;
   font-size: 16px;
-  border: 2px solid #ddd;
-  border-radius: 25px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
   outline: none;
-  transition: border-color 0.3s;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
 }
 
 .search-input:focus {
@@ -39,10 +41,10 @@
 }
 
 .sort-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 200px auto 200px;
   align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .sort-container label {
@@ -52,13 +54,13 @@
 
 .sort-select {
   padding: 8px 12px;
-  border: 2px solid #ddd;
-  border-radius: 5px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
   font-size: 14px;
   background-color: white;
   cursor: pointer;
   outline: none;
-  transition: border-color 0.3s;
+  transition: border-color 0.2s;
 }
 
 .sort-select:focus {
@@ -193,8 +195,9 @@
   }
 
   .sort-container {
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .sort-select {
